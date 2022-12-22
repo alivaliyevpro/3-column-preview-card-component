@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--very-light-gray);
-    font-size: 15px;
+    font-size: 1rem;
     max-width: 100vw;
     margin-inline: 1rem;
 }
@@ -70,7 +70,7 @@ p {
     padding: 0.7rem 0;
 }
 
-h1 {
+h2 {
     font-family: var(--ff-big-shoulders-display-700);
     font-weight: 700;
     font-size: 2.5rem;
@@ -78,44 +78,49 @@ h1 {
     text-transform: uppercase;
 }
 
-button {
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
     background-color: var(--very-light-gray);
-    border: none;
     padding: 15px 30px;
-    margin: 2px;
     border-radius: 2rem;
     font-family: var(--ff-lexend-deca-400);
     font-weight: 400;
-    font-weight: bold;
     border: solid var(--very-light-gray);
     cursor: pointer;
 }
 
-.btn-sedans {
+a {
+    text-decoration: none;
+}
+
+.btn-sedans a {
     color: var(--bright-orange);
 }
 
-.btn-suvs {
+.btn-suvs a {
     color: var(--dark-cyan);
 }
 
-.btn-luxury {
+.btn-luxury a {
     color: var(--very-dark-cyan);
 }
 
-.btn-sedans:hover {
+.btn-sedans a:hover {
     background-color: var(--bright-orange);
     color: var(--very-light-gray);
     transition: 0.2s;
 }
 
-.btn-suvs:hover {
+.btn-suvs a:hover {
     background-color: var(--dark-cyan);
     color: var(--very-light-gray);
     transition: 0.2s;
 }
 
-.btn-luxury:hover {
+.btn-luxury a:hover {
     background-color: var(--very-dark-cyan);
     color: var(--very-light-gray);
     transition: 0.2s;
@@ -132,6 +137,6 @@ button {
     }
     
     p {
-        padding-bottom: 3rem;
+        padding-bottom: 2.5rem;
     }
 }
